@@ -7,6 +7,7 @@ import com.exercise.util.WebDriverManager;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -34,7 +35,7 @@ public class TourLoginPageTest {
         ToursHomePage homePage = new ToursHomePage();
         driver.get(prop.getProperty("tourHomePage"));
         homePage = homePage.getInstance(driver);
-        String currentDate  = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).format(LocalDateTime.now());
+        String currentDate = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).format(LocalDateTime.now());
         Assert.assertEquals(currentDate, homePage.getCurrentDate());
         Assert.assertEquals("Aruba", homePage.getFeaturedDestination().split(":")[1].trim());
     }
@@ -61,7 +62,7 @@ public class TourLoginPageTest {
         homePage.typeUserName(prop.getProperty("userName"));
         homePage.typePassword(prop.getProperty("validPassword"));
         homePage.submitForm();
-        Assert.assertEquals(prop.getProperty("finderImageURL"),driver.findElement(By.xpath("//img[@src='/images/masts/mast_flightfinder.gif']")).getAttribute("src"));
+        Assert.assertEquals(prop.getProperty("finderImageURL"), driver.findElement(By.xpath("//img[@src='/images/masts/mast_flightfinder.gif']")).getAttribute("src"));
         Assert.assertEquals(prop.getProperty("flightPageURL"), driver.getCurrentUrl().split("\\?")[0].trim());
 
     }

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f16e05ab-6e7d-4018-9765-d37b235c12cb" name="Default Changelist" comment="" />
+    <list default="true" id="f16e05ab-6e7d-4018-9765-d37b235c12cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/GoogleHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/GoogleHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursSignOnPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursSignOnPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/PropManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/PropManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -30,6 +44,7 @@
   </component>
   <component name="ProjectId" id="1bDYcqVI57XQDJKrVJuYD0ekRSr" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -159,32 +174,43 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java</url>
-          <line>28</line>
+          <line>25</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java</url>
-          <line>60</line>
+          <line>61</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java</url>
-          <line>32</line>
+          <line>29</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

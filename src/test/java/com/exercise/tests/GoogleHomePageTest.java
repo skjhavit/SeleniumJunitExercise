@@ -5,9 +5,6 @@ import com.exercise.util.PropManager;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import com.exercise.util.WebDriverManager;
-
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.Properties;
 
 public class GoogleHomePageTest {

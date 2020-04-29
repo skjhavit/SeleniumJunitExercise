@@ -9,10 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GoogleHomePage {
     WebDriver driver;
-    @FindBy(how = How.NAME, using ="q")
+    
+    @FindBy(how = How.NAME, using = "q")
     WebElement searchTextBox;
 
-    @FindBy(how = How.NAME, using ="btnK")
+    @FindBy(how = How.NAME, using = "btnK")
     WebElement searchButton;
 
     public void enterSearchText(String searchText) {

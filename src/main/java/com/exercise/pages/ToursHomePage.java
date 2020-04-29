@@ -8,14 +8,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ToursHomePage {
     WebDriver driver;
-    @FindBy(how = How.XPATH, using ="//form[@name='home']/table/tbody/tr[1]/td[1]/font/b")
+
+    @FindBy(how = How.XPATH, using = "//form[@name='home']/table/tbody/tr[1]/td[1]/font/b")
     WebElement currentDate;
-    @FindBy(how = How.XPATH, using ="//img[@src='/images/featured_destination.gif']")
+
+    @FindBy(how = How.XPATH, using = "//img[@src='/images/featured_destination.gif']")
     WebElement featuredDestination;
+
     @FindBy(how = How.NAME, using = "userName")
     WebElement userName;
+
     @FindBy(how = How.NAME, using = "password")
     WebElement password;
+
     @FindBy(how = How.NAME, using = "login")
     WebElement signIn;
 
@@ -25,10 +30,10 @@ public class ToursHomePage {
     }
 
     public String getCurrentDate() {
-        return  this.currentDate.getText();
+        return this.currentDate.getText();
     }
 
-    public  String getFeaturedDestination() {
+    public String getFeaturedDestination() {
         return this.featuredDestination.getAttribute("alt");
     }
 
@@ -39,6 +44,7 @@ public class ToursHomePage {
     public void typePassword(String password) {
         this.password.sendKeys(password);
     }
+
     public void submitForm() {
         this.signIn.click();
     }

@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebDriverManager {
     WebDriver driver;
     String propertyName;
+
     public void initWebDriver(String driverType) {
         switch (driverType) {
             case "chrome":
@@ -24,7 +25,7 @@ public class WebDriverManager {
                 System.setProperty("webdriver.chrome.driver", PropManager.getProps().getProperty("chromeDriverPath"));
                 driver = new ChromeDriver();
         }
-        if(System.getProperty(propertyName).isEmpty()){
+        if (System.getProperty(propertyName).isEmpty()) {
             System.out.println(" Driver path is not set, please set the driverpath first. Exiting the Application");
             System.exit(1);
         }
@@ -32,7 +33,7 @@ public class WebDriverManager {
         this.setDriver(driver);
     }
 
-    public  void shutDownDriver() {
+    public void shutDownDriver() {
         this.getDriver().quit();
     }
 

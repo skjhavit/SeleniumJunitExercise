@@ -7,7 +7,7 @@ public class PropManager {
     private static Properties props;
 
     public static Properties getProps() {
-        if(props == null || props.isEmpty()) {
+        if (props == null || props.isEmpty()) {
             System.out.println("loading prop file");
             props = new Properties();
             try (InputStream input = PropManager.class.getClassLoader().getResourceAsStream("config.properties")) {
