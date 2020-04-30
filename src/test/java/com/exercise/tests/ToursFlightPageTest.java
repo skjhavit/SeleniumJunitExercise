@@ -5,6 +5,7 @@ import com.exercise.pages.GoogleHomePage;
 import com.exercise.pages.SelectFlightPage;
 import com.exercise.pages.ToursHomePage;
 import com.exercise.util.PropManager;
+import com.exercise.util.RepetetiveActions;
 import com.exercise.util.WebDriverManager;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,7 @@ public class ToursFlightPageTest {
     WebDriver driver;
     WebDriverManager driverManager;
     static Properties prop;
+    RepetetiveActions actions;
 
     @BeforeClass
     public static void initialSetup() {
@@ -26,12 +28,8 @@ public class ToursFlightPageTest {
         driverManager = new WebDriverManager();
         driverManager.initWebDriver(prop.getProperty("BrowserToExecute"));
         driver = driverManager.getDriver();
-        ToursHomePage homePage = new ToursHomePage();
-        driver.get(prop.getProperty("tourHomePage"));
-        homePage = homePage.getInstance(driver);
-        homePage.typeUserName(prop.getProperty("userName"));
-        homePage.typePassword(prop.getProperty("validPassword"));
-        homePage.submitForm();
+        actions = new RepetetiveActions();
+        actions.LoginToHomePage(driver);
     }
 
     @Test
@@ -40,11 +38,7 @@ public class ToursFlightPageTest {
         finderPage = finderPage.getInstance(driver);
         Assert.assertEquals(Boolean.TRUE, finderPage.isDepartingFromOptionPresent(prop.getProperty("toDestination")));
         Assert.assertEquals(Boolean.TRUE, finderPage.isDepartingFromOptionPresent(prop.getProperty("fromDestination")));
-        finderPage.selectDepartingFromOption(prop.getProperty("fromDestination"));
-        finderPage.selectArrivingToOption(prop.getProperty("toDestination"));
-        finderPage.selectServiceClass(prop.getProperty("serviceClass"));
-        finderPage.selectTripType(prop.getProperty("tripType"));
-        finderPage.submitSearch();
+        actions.selectSourceAndDestination(finderPage);
         Assert.assertEquals("Select a Flight: Mercury Tours", driver.getTitle());
     }
 
@@ -52,11 +46,7 @@ public class ToursFlightPageTest {
     public void testSelectFLightFunctionality() {
         FlightFinderPage finderPage = new FlightFinderPage();
         finderPage = finderPage.getInstance(driver);
-        finderPage.selectDepartingFromOption(prop.getProperty("fromDestination"));
-        finderPage.selectArrivingToOption(prop.getProperty("toDestination"));
-        finderPage.selectServiceClass(prop.getProperty("serviceClass"));
-        finderPage.selectTripType(prop.getProperty("tripType"));
-        finderPage.submitSearch();
+        actions.selectSourceAndDestination(finderPage);
         SelectFlightPage flightPage = new SelectFlightPage();
         flightPage = flightPage.getInstance(driver);
         Assert.assertEquals(Boolean.TRUE, flightPage.isSortedByPrice());

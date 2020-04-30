@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16e05ab-6e7d-4018-9765-d37b235c12cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/FlightFinderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/SelectFlightPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/GoogleHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/GoogleHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.GoogleHomePageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.GoogleHomePageTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.TourLoginPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.TourLoginPageTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.GoogleHomePageTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.GoogleHomePageTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.TourLoginPageTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.TourLoginPageTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +41,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -91,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TourLoginPageTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumJunitExercise" />
+    <configuration name="TourLoginPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.exercise.tests.*" />
@@ -156,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ToursFlightPageTest" />
+        <item itemvalue="JUnit.TourLoginPageTest" />
         <item itemvalue="JUnit.ToursFlightPageTest.testSelectFLightFunctionality" />
         <item itemvalue="JUnit.ToursFlightPageTest.testFlightSearchFunctionality" />
         <item itemvalue="JUnit.GoogleHomePageTest" />
-        <item itemvalue="JUnit.TourLoginPageTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -192,8 +187,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java</url>
-          <line>64</line>
+          <line>54</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
