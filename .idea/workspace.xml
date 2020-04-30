@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16e05ab-6e7d-4018-9765-d37b235c12cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/FlightFinderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/SelectFlightPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/GoogleHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/GoogleHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursSignOnPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ToursSignOnPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/PropManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/PropManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/util/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/util/WebDriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.GoogleHomePageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.GoogleHomePageTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.TourLoginPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.exercise.tests.TourLoginPageTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.GoogleHomePageTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.GoogleHomePageTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.TourLoginPageTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.exercise.tests.TourLoginPageTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GoogleHomePageTest">
+  <component name="RunManager" selected="JUnit.ToursFlightPageTest">
     <configuration name="GoogleHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumJunitExercise" />
       <extension name="coverage">
@@ -104,48 +106,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TourLoginPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumJunitExercise" />
+    <configuration name="ToursFlightPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.exercise.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TourLoginPageTest" />
+      <option name="PACKAGE_NAME" value="com.exercise.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise.tests.ToursFlightPageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TourLoginPageTest.incorrectLoginScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumJunitExercise" />
+    <configuration name="ToursFlightPageTest.testFlightSearchFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.exercise.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TourLoginPageTest" />
-      <option name="METHOD_NAME" value="incorrectLoginScenario" />
+      <option name="PACKAGE_NAME" value="com.exercise.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise.tests.ToursFlightPageTest" />
+      <option name="METHOD_NAME" value="testFlightSearchFunctionality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TourLoginPageTest.validLoginScenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumJunitExercise" />
+    <configuration name="ToursFlightPageTest.testSelectFLightFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="com.exercise.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TourLoginPageTest" />
-      <option name="METHOD_NAME" value="validLoginScenario" />
+      <option name="PACKAGE_NAME" value="com.exercise.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise.tests.ToursFlightPageTest" />
+      <option name="METHOD_NAME" value="testSelectFLightFunctionality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ToursFlightPageTest" />
+        <item itemvalue="JUnit.ToursFlightPageTest.testSelectFLightFunctionality" />
+        <item itemvalue="JUnit.ToursFlightPageTest.testFlightSearchFunctionality" />
         <item itemvalue="JUnit.GoogleHomePageTest" />
         <item itemvalue="JUnit.TourLoginPageTest (1)" />
-        <item itemvalue="JUnit.TourLoginPageTest.validLoginScenario" />
-        <item itemvalue="JUnit.TourLoginPageTest" />
-        <item itemvalue="JUnit.TourLoginPageTest.incorrectLoginScenario" />
       </list>
     </recent_temporary>
   </component>
@@ -189,29 +191,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/GoogleHomePageTest.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GoogleHomePage {
     WebDriver driver;
-    
+
     @FindBy(how = How.NAME, using = "q")
     WebElement searchTextBox;
 
