@@ -1,7 +1,7 @@
 package com.exercise.util;
 
-import com.exercise.pages.FlightFinderPage;
-import com.exercise.pages.ToursHomePage;
+import com.exercise.pages.*;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Properties;
@@ -37,6 +37,27 @@ public class RepetetiveActions {
         finderPage.selectServiceClass(prop.getProperty("serviceClass"));
         finderPage.selectTripType(prop.getProperty("tripType"));
         finderPage.submitSearch();
+    }
+
+    public SelectFlightPage proceedToBookFlight(WebDriver driver) {
+        FlightFinderPage finderPage = new FlightFinderPage();
+        finderPage = finderPage.getInstance(driver);
+        selectSourceAndDestination(finderPage);
+        SelectFlightPage flightPage = new SelectFlightPage();
+        flightPage = flightPage.getInstance(driver);
+        Assert.assertEquals(Boolean.TRUE, flightPage.isSortedByPrice());
+        Assert.assertEquals(Boolean.TRUE, flightPage.checkHeaderColors(prop.getProperty("headerColor")));
+        flightPage.selectSecondHeighestPrice(Integer.parseInt(prop.getProperty("priceOrder")));
+        return flightPage;
+    }
+
+    public ConfirmationPage getConfirmationPage(WebDriver driver) {
+        BookFlightPage bookFlightPage =  new BookFlightPage();
+        bookFlightPage = bookFlightPage.getInstance(driver);
+        bookFlightPage.bookFlight(prop);
+        ConfirmationPage confirmationPage = new ConfirmationPage();
+        confirmationPage =  confirmationPage.getInstance(driver);
+        return confirmationPage;
     }
 
 }

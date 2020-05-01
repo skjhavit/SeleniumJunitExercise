@@ -1,9 +1,6 @@
 package com.exercise.tests;
 
-import com.exercise.pages.FlightFinderPage;
-import com.exercise.pages.GoogleHomePage;
-import com.exercise.pages.SelectFlightPage;
-import com.exercise.pages.ToursHomePage;
+import com.exercise.pages.*;
 import com.exercise.util.PropManager;
 import com.exercise.util.RepetetiveActions;
 import com.exercise.util.WebDriverManager;
@@ -53,6 +50,31 @@ public class ToursFlightPageTest {
         Assert.assertEquals(Boolean.TRUE, flightPage.checkHeaderColors(prop.getProperty("headerColor")));
         flightPage.selectSecondHeighestPrice(Integer.parseInt(prop.getProperty("priceOrder")));
         flightPage.clickContinue();
+    }
+
+    @Test
+    public void testFlightBooking() {
+        SelectFlightPage flightPage = actions.proceedToBookFlight(driver);
+        flightPage.clickContinue();
+        BookFlightPage bookFlightPage =  new BookFlightPage();
+        bookFlightPage = bookFlightPage.getInstance(driver);
+        Assert.assertEquals(Boolean.TRUE, bookFlightPage.isInboundFlightCorrect(flightPage.getInFlightNumber()));
+        Assert.assertEquals(Boolean.TRUE, bookFlightPage.isOutboundFlightCorrect(flightPage.getOutFlightNumber()));
+        Assert.assertEquals(Boolean.TRUE, bookFlightPage.isTotalCorrect());
+        bookFlightPage.bookFlight(prop);
+    }
+
+    @Test
+    public void testConfirmationPage() {
+        SelectFlightPage flightPage = actions.proceedToBookFlight(driver);
+        flightPage.clickContinue();
+        ConfirmationPage confirmationPage = actions.getConfirmationPage(driver);
+        Assert.assertEquals(flightPage.getOutFlightNumber(), confirmationPage.getOutboundFlightName());
+        Assert.assertEquals(flightPage.getInFlightNumber(), confirmationPage.getInboundFlightName());
+        System.out.println("Confirmation Number is : "+confirmationPage.getConfirmationNumber());
+        confirmationPage.signMeOff();
+
+
     }
 
     @After

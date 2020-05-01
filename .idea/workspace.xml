@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16e05ab-6e7d-4018-9765-d37b235c12cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/com/exercise/beans/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/BookFlightPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/ConfirmationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/TourLoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exercise/pages/SelectFlightPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exercise/pages/SelectFlightPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,18 +76,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ToursFlightPageTest">
-    <configuration name="GoogleHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumJunitExercise" />
+  <component name="RunManager" selected="JUnit.ToursFlightPageTest.testConfirmationPage">
+    <configuration name="TempClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.exercise.util.TempClass" />
+      <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exercise.tests.*" />
+          <option name="PATTERN" value="com.exercise.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.exercise.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.exercise.tests.GoogleHomePageTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToursFlightPageTest.testFlightSearchFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToursFlightPageTest.testConfirmationPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
@@ -126,13 +130,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exercise.tests" />
       <option name="MAIN_CLASS_NAME" value="com.exercise.tests.ToursFlightPageTest" />
-      <option name="METHOD_NAME" value="testFlightSearchFunctionality" />
+      <option name="METHOD_NAME" value="testConfirmationPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToursFlightPageTest.testSelectFLightFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToursFlightPageTest.testFlightBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exercise.tests" />
       <option name="MAIN_CLASS_NAME" value="com.exercise.tests.ToursFlightPageTest" />
-      <option name="METHOD_NAME" value="testSelectFLightFunctionality" />
+      <option name="METHOD_NAME" value="testFlightBooking" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ToursFlightPageTest.testConfirmationPage" />
+        <item itemvalue="JUnit.ToursFlightPageTest.testFlightBooking" />
+        <item itemvalue="Application.TempClass" />
         <item itemvalue="JUnit.ToursFlightPageTest" />
         <item itemvalue="JUnit.TourLoginPageTest" />
-        <item itemvalue="JUnit.ToursFlightPageTest.testSelectFLightFunctionality" />
-        <item itemvalue="JUnit.ToursFlightPageTest.testFlightSearchFunctionality" />
-        <item itemvalue="JUnit.GoogleHomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -187,18 +191,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/tests/ToursFlightPageTest.java</url>
-          <line>54</line>
+          <line>51</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java</url>
           <line>13</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/exercise/util/RepetetiveActions.java</url>
           <line>20</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/exercise/util/TempClass.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/exercise/pages/ConfirmationPage.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

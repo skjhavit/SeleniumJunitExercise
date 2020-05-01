@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 public class SelectFlightPage {
     WebDriver driver;
+    String inFlightNumber;
+    String outFlightNumber;
 
     @FindBy(how = How.NAME, using = "outFlight")
     List<WebElement> departingFlights;
@@ -50,13 +52,27 @@ public class SelectFlightPage {
     public void selectSecondHeighestPrice(int order) {
         if(!this.departingFlights.get(order-1).isSelected()) {
             this.departingFlights.get(order-1).click();
+            String flightDeatils[] = this.departingFlights.get(order-1).getAttribute("value").split("\\$");
+            outFlightNumber = flightDeatils[0] + " "+flightDeatils[1];
         }
         if(!this.arrivingFlights.get(order-1).isSelected()) {
             this.arrivingFlights.get(order-1).click();
+            String flightDeatils[] = this.arrivingFlights.get(order-1).getAttribute("value").split("\\$");
+            inFlightNumber = flightDeatils[0] + " "+flightDeatils[1];
         }
     }
 
     public void clickContinue() {
         this.continueButton.click();
     }
+
+    public String getInFlightNumber() {
+        return inFlightNumber;
+    }
+
+
+    public String getOutFlightNumber() {
+        return outFlightNumber;
+    }
+
 }
